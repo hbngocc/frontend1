@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 1 - Lab 5</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: peachpuff;
+            border: 2px solid black;
+        }
+
+        .container h2 {
+            text-align: center;
+        }
+
+        .container img {
+            margin: 10px;
+            display: block;
+            width: 700px;
+        }
+
+        .container label {
+            text-align: center;
+        }
+
+        .container button {
+            margin-left: 20px;
+        }
+
+        .container label {
+            margin-left: 220px;
+        }
+
+        .container h3 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function hienthi() {
+            var tensp = document.getElementById("ten").innerText; //lấy tên sản phẩm
+            var soluongsp = document.getElementById("qty").value; //lấy số lượng 
+            var giasp = document.getElementById("pro").getAttribute("data-price"); //lấy giá sản phẩm từ label
+            var tinhtien = giasp * soluongsp;
+
+            document.getElementById("name").innerText = tensp;
+            document.getElementById("amount").innerText = "$" + tinhtien;
+        }
+    </script>
+    <!-- innerText: lấy nội dung chữ-->
+    <!--getAttribute("data-price"): lấy giá sản phẩm từ data-price-->
+    <!-- value: lấy giá trị nhập từ ô input -->
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="ten">IPHONE XS MAX 2019</h2>
+        <img src="/iphone.jpg" alt="">
+        <label id="pro" data-price="1950">Số lượng</label> <!--hiển thị chữ “Số lượng”, đồng thời có thuộc tính data-price="1950" để lưu giá của sản phẩm*/ -->
+        <input id="qty" type="number" value="1" /> <!-- ô nhập số lượng sản phẩm -->
+        <button onclick="hienthi()">Tính</button> <!-- nhấn nút "tính", hàm hienthi() sẽ chạy -->
+        <hr>
+        <h3>Name: <span id="name">?</span></h3>
+        <h3>Amount: <span id="amount">?</span></h3>
+    </div>
+</body>
+
+</html>

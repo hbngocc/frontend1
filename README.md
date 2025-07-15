@@ -22,7 +22,8 @@ Repo gồm 3 bài tập thực hành lập trình web giao diện bằng HTML, C
 
 1. **Clone repo về máy**:
 ```bash
-git clone https://github.com/hbngocc/frontend1.git
+git clone https://github.com/hbngocc/frontend1.git 
+```
 
 2. Mở từng bài bằng trình duyệt
 - Vào thư mục frontend1

@@ -1,6 +1,6 @@
-# Bài tập Frontend 1 - HTML, CSS, JavaScript 
+# Frontend 1 - HTML, CSS, JavaScript 
 
-Repo gồm 3 bài tập thực hành lập trình web giao diện bằng HTML, CSS và JavaScript
+Repo gồm 3 mini project lập trình web giao diện bằng HTML, CSS và JavaScript
 
 ## Danh sách bài tập
 
